@@ -1,0 +1,286 @@
+html,
+body {
+	height: 100%;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Логотип та вітальний блок */
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+.main-page {
+	background: linear-gradient(90deg, #fcfeff 0%, #a5deff 91.99%);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	margin-top: 34px;
+	margin-bottom: 58px;
+	display: flex;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
+.logo-text {
+	margin-left: 18px;
+}
+
+.banderogus-container {
+	background: #ffffff;
+	padding: 60px 56px;
+	align-self: center;
+}
+
+.main-page-row {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.banderogus-greeting {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #1b1d1f;
+	margin-bottom: 16px;
+}
+
+.banderogus-start-text {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+	color: #ff6b0a;
+	margin-bottom: 48px;
+}
+
+.banderogus-title {
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 72px;
+	color: #1b1d1f;
+}
+
+.banderogus-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #1b1d1f;
+	margin-top: 24px;
+	margin-bottom: 48px;
+}
+/* Кнопки блока вітання та модального вікна */
+.banderogus-launch,
+.modal-form-button {
+	background: #ff6b0a;
+	border-radius: 8px;
+	padding: 12px 24px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.banderogus-image {
+	align-self: flex-end;
+}
+
+/* Цікаві факти про бандерогусей */
+.gus-facts {
+	padding: 52px 0 72px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gus-title {
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 100px;
+	text-align: center;
+	color: #1b1d1f;
+	margin: 16px 0;
+}
+
+.gus-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #1b1d1f;
+	width: 875px;
+}
+
+.gus-facts-container {
+	width: 1170px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gus-fact-item {
+	width: 33%;
+}
+
+.gus-fact-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+	align-items: center;
+	color: #1b1d1f;
+	margin: 12px 0 32px 0;
+}
+
+.gus-fact-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #1b1d1f;
+	width: 280px;
+}
+
+/* Підвал */
+.victory-footer {
+	display: flex;
+	justify-content: center;
+}
+
+.victory-bgd {
+	width: 1170px;
+	background: linear-gradient(90deg, #ffffff 0%, #c1e8ff 91.99%);
+	padding: 72px 0;
+	margin-bottom: 72px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.victory-title {
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 100px;
+	color: #1b1d1f;
+	margin: 16px 0;
+}
+
+.victory-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #1b1d1f;
+	width: 875px;
+	text-align: center;
+}
+
+/* Модальні вікна початкове та кінцеве */
+.modal-bgd {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(27, 29, 31, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	opacity: 0;
+	pointer-events: none;
+
+	transition: all 0.3s ease-in-out;
+}
+
+.modal-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modal-form-container {
+	padding: 32px 92px 60px 92px;
+	background: #d9d9d9;
+	position: relative;
+	border-radius: 8px;
+}
+
+.modal-form-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+	color: #1b1d1f;
+	margin: 32px 0 12px 0;
+}
+
+.modal-form-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #1b1d1f;
+	margin-bottom: 24px;
+}
+
+.modal-form-field {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
+}
+
+.modal-field-name {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #1b1d1f;
+	margin-bottom: 8px;
+}
+
+.modal-field-input {
+	width: 374px;
+	height: 48px;
+	background: #ffffff;
+	border: 1px solid #005bbb;
+	box-sizing: border-box;
+	border-radius: 8px;
+	font-weight: 400;
+	font-size: 16px;
+	color: #1b1d1f;
+	padding: 4px 8px;
+}
+
+.modal-form-button {
+	border: 0;
+	margin-top: 24px;
+}
+
+.close-button {
+	position: absolute;
+	right: 24px;
+	top: 24px;
+	font-size: 14px;
+	color: #1b1d1f;
+	cursor: pointer;
+	border: 0;
+	background: none;
+}
+
+.modal-description {
+	margin-bottom: 0;
+}
+
+.modal-launch {
+	padding: 32px 92px 60px 92px;
+	position: relative;
+	background: linear-gradient(180deg, #fcfeff 0%, #a5deff 100%);
+	border-radius: 8px;
+}
+
+.modal-active {
+	opacity: 1;
+	pointer-events: all;
+}
