@@ -284,3 +284,14 @@ header {
 	opacity: 1;
 	pointer-events: all;
 }
+
+.gus-anim {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	margin-bottom: auto;
+	margin-top: auto;
+	width: 100%;
+	z-index: 2;
+	pointer-events: none;
+}

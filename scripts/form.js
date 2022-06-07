@@ -32,6 +32,27 @@ closeBtns.forEach(btn => {
 	});
 });
 
+function clearFormFields() {
+	const modalFiends = formModal.querySelectorAll("input");
+
+	modalFiends.forEach(field => {
+		field.value = "";
+	});
+}
+
+function showGooseAnim() {
+	const targetContainer = document.querySelector(".modal-form");
+	const gusImage = document.createElement("img");
+	gusImage.setAttribute("src", "./img/gus-anim.gif");
+	gusImage.classList.add("gus-anim");
+
+	targetContainer.appendChild(gusImage);
+
+	setTimeout(2000, () => {
+		targetContainer.removeChild(gusImage);
+	});
+}
+
 form.addEventListener("submit", e => {
 	e.preventDefault();
 	const formData = new FormData(form);
@@ -42,9 +63,14 @@ form.addEventListener("submit", e => {
 		body: new URLSearchParams(formData).toString(),
 	})
 		.then(() => {
-			closeFormModal();
-			setTimeout(openSuccessModal, 700);
-			setTimeout(closeSuccessModal, 3000);
+			showGooseAnim();
+
+			setTimeout(() => {
+				closeFormModal();
+				setTimeout(openSuccessModal, 700);
+				setTimeout(closeSuccessModal, 4000);
+				clearFormFields();
+			}, 4000);
 		})
 		.catch(error => console.log("Sending form failed"));
 });
